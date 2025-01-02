@@ -1,0 +1,140 @@
+#VRML_SIM R2023b utf8
+
+EXTERNPROTO "https://raw.githubusercontent.com/cyberbotics/webots/R2023b/projects/objects/floors/protos/Floor.proto"
+EXTERNPROTO "https://raw.githubusercontent.com/cyberbotics/webots/R2023b/projects/appearances/protos/OsbWood.proto"
+EXTERNPROTO "https://raw.githubusercontent.com/cyberbotics/webots/R2023b/projects/appearances/protos/Parquetry.proto"
+EXTERNPROTO "https://raw.githubusercontent.com/cyberbotics/webots/R2023b/projects/robots/adept/pioneer3/protos/Pioneer3at.proto"
+EXTERNPROTO "https://raw.githubusercontent.com/cyberbotics/webots/R2023b/projects/objects/backgrounds/protos/TexturedBackground.proto"
+EXTERNPROTO "https://raw.githubusercontent.com/cyberbotics/webots/R2023b/projects/objects/backgrounds/protos/TexturedBackgroundLight.proto"
+EXTERNPROTO "https://raw.githubusercontent.com/cyberbotics/webots/R2023b/projects/appearances/protos/PaintedWood.proto"
+
+WorldInfo {
+  info [
+    "This example shows an integration of OpenAI Gym with Webots."
+  ]
+  title "OpenAI Gym Environment"
+}
+Viewpoint {
+  orientation 0.08496253595004347 0.07713692545676501 -0.9933938102364114 1.7861257247879823
+  position 1.7496798984717574 10.462795496166017 2.5400777385717626
+}
+TexturedBackground {
+  texture "empty_office"
+}
+TexturedBackgroundLight {
+}
+Pioneer3at {
+  hidden rotation_3 0.5773516024434235 -0.5773476024462298 -0.5773516026699856 2.094404999772917
+  hidden rotation_4 0.5773516024434103 -0.5773476024462378 -0.5773516026699909 2.094404999772964
+  hidden rotation_5 0.5773516024434617 -0.5773476024463275 -0.5773516026698501 2.0944049997731176
+  hidden rotation_6 0.5773516024434723 -0.5773476024462978 -0.5773516026698691 2.094404999773049
+  translation -1.474692454522114e-09 -7.35348980043118e-08 -0.0025450543454786367
+  rotation -0.014763424176609146 0.999891014358322 2.6684589538711872e-05 4.967463370105729e-05
+  controller "RL_controller"
+  supervisor TRUE
+  extensionSlot [
+    HingeJoint {
+      jointParameters HingeJointParameters {
+        position 1.0946025597080851e-05
+        axis 0 1 0
+        anchor 0 0 0.21
+        minStop -1
+        maxStop 1
+        staticFriction 0.01
+      }
+      device [
+        PositionSensor {
+        }
+      ]
+      endPoint Solid {
+        translation 6.129028035251043e-06 0 0.7699999999692654
+        rotation 0 1 0 1.094601611627929e-05
+        children [
+          DEF POLE_ENDPOINT Solid {
+            translation 0 0 0.53
+            children [
+              DEF BALL_SHAPE Shape {
+                appearance PaintedWood {
+                  colorOverride 1 0.4 0.2
+                }
+                geometry Sphere {
+                  radius 0.07
+                  subdivision 3
+                }
+              }
+            ]
+            boundingObject USE BALL_SHAPE
+            physics Physics {
+              density -1
+              mass 0.4
+            }
+          }
+          DEF POLE_SHAPE Shape {
+            appearance OsbWood {
+              colorOverride 0.7 1 1
+            }
+            geometry Cylinder {
+              height 1
+              radius 0.011
+            }
+          }
+        ]
+        boundingObject USE POLE_SHAPE
+        physics Physics {
+        }
+      }
+    }
+  ]
+}
+Floor {
+  size 100 100
+  appearance Parquetry {
+    type "light strip"
+    colorOverride 0.9 1 1
+    IBLStrength 0
+  }
+}
+    Shape {
+      appearance PBRAppearance {
+        baseColorMap ImageTexture {
+          url [
+            "https://raw.githubusercontent.com/cyberbotics/webots/R2023b/projects/samples/devices/worlds/textures/ruler.png"
+          ]
+        }
+        roughness 1
+        metalness 0
+      }
+      geometry IndexedFaceSet {
+        coord Coordinate {
+          point [
+            -0.015 -0.204 0.001
+            0.015 -0.204 0.001
+            -0.015 -0.204 0
+            0.015 -0.204 0
+            -0.015 0.0042 0.001
+            0.015 0.0042 0.001
+            -0.015 0.0042 0
+            0.015 0.0042 0
+          ]
+        }
+        texCoord TextureCoordinate {
+          point [
+            1 0
+            1 1
+            0 1
+            0 0
+            0.005 0
+            0.005 1
+            0.01 1
+            0.01 0
+          ]
+        }
+        coordIndex [
+          2, 3, 1, 0, -1, 0, 1, 5, 4, -1, 6, 7, 3, 2, -1, 7, 5, 1, 3, -1, 4, 6, 2, 0, -1, 4, 5, 7, 6, -1
+        ]
+        texCoordIndex [
+          4, 5, 6, 7, -1, 0, 1, 2, 3, -1, 3, 2, 1, 0, -1, 4, 5, 6, 7, -1, 4, 5, 6, 7, -1, 4, 5, 6, 7, -1
+        ]
+      }
+      castShadows FALSE
+    }

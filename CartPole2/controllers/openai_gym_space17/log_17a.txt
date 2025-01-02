@@ -1,0 +1,83 @@
+After 1000000 steps
+
+
+-----------------------------------------
+| rollout/                |             |
+|    ep_len_mean          | 256         |
+|    ep_rew_mean          | 255         |
+| time/                   |             |
+|    fps                  | 633         |
+|    iterations           | 488         |
+|    time_elapsed         | 1577        |
+|    total_timesteps      | 999424      |
+| train/                  |             |
+|    approx_kl            | 0.003056975 |
+|    clip_fraction        | 0.0364      |
+|    clip_range           | 0.2         |
+|    entropy_loss         | -0.372      |
+|    explained_variance   | 0.835       |
+|    learning_rate        | 0.0003      |
+|    loss                 | 43.5        |
+|    n_updates            | 15190       |
+|    policy_gradient_loss | -0.00402    |
+|    value_loss           | 106         |
+-----------------------------------------
+
+After 100000 steps
+
+----------------------------------------
+| rollout/                |            |
+|    ep_len_mean          | 63.2       |
+|    ep_rew_mean          | 62.2       |
+| time/                   |            |
+|    fps                  | 473        |
+|    iterations           | 49         |
+|    time_elapsed         | 212        |
+|    total_timesteps      | 100352     |
+| train/                  |            |
+|    approx_kl            | 0.00792607 |
+|    clip_fraction        | 0.0555     |
+|    clip_range           | 0.2        |
+|    entropy_loss         | -2.02      |
+|    explained_variance   | 0.827      |
+|    learning_rate        | 0.0003     |
+|    loss                 | 21.7       |
+|    n_updates            | 530        |
+|    policy_gradient_loss | -0.00656   |
+|    value_loss           | 34.1       |
+----------------------------------------
+
+After 10000 steps
+------------------------------------------
+| rollout/                |              |
+|    ep_len_mean          | 34.9         |
+|    ep_rew_mean          | 33.9         |
+| time/                   |              |
+|    fps                  | 124          |
+|    iterations           | 5            |
+|    time_elapsed         | 82           |
+|    total_timesteps      | 10240        |
+| train/                  |              |
+|    approx_kl            | 0.0050607966 |
+|    clip_fraction        | 0.0188       |
+|    clip_range           | 0.2          |
+|    entropy_loss         | -2.81        |
+|    explained_variance   | 0.0574       |
+|    learning_rate        | 0.0003       |
+|    loss                 | 24           |
+|    n_updates            | 40           |
+|    policy_gradient_loss | -0.00795     |
+|    value_loss           | 60.7         |
+------------------------------------------
+
+
+After 2048 steps
+---------------------------------
+| rollout/           |          |
+|    ep_len_mean     | 36.5     |
+|    ep_rew_mean     | 35.5     |
+| time/              |          |
+|    fps             | 32       |
+|    iterations      | 1        |
+|    time_elapsed    | 63       |
+|    total_timesteps | 2048     |

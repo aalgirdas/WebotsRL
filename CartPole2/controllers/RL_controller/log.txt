@@ -1,0 +1,662 @@
+After 32M when random.choice([-2.5,-2.4,-2.3,-2.2,-2.1,-2.,2.,2.1,2.2,2.3,2.4,2.5]) 
+
+------------------------------------------
+| rollout/                |              |
+|    ep_len_mean          | 534          |
+|    ep_rew_mean          | 458          |
+| time/                   |              |
+|    fps                  | 700          |
+|    iterations           | 4883         |
+|    time_elapsed         | 14281        |
+|    total_timesteps      | 10000384     |
+| train/                  |              |
+|    approx_kl            | 0.0146655785 |
+|    clip_fraction        | 0.114        |
+|    clip_range           | 0.2          |
+|    entropy_loss         | -0.492       |
+|    explained_variance   | 0.331        |
+|    learning_rate        | 0.0003       |
+|    loss                 | 26.4         |
+|    n_updates            | 303470       |
+|    policy_gradient_loss | -0.00873     |
+|    std                  | 0.397        |
+|    value_loss           | 82.5         |
+------------------------------------------
+
+After 22M when random.choice([-2.5,-2.4,-2.3,-2.2,-2.1,-2.,2.,2.1,2.2,2.3,2.4,2.5]) 
+
+-----------------------------------------
+| rollout/                |             |
+|    ep_len_mean          | 447         |
+|    ep_rew_mean          | 410         |
+| time/                   |             |
+|    fps                  | 548         |
+|    iterations           | 489         |
+|    time_elapsed         | 1826        |
+|    total_timesteps      | 1001472     |
+| train/                  |             |
+|    approx_kl            | 0.014406359 |
+|    clip_fraction        | 0.14        |
+|    clip_range           | 0.2         |
+|    entropy_loss         | -0.0676     |
+|    explained_variance   | 0.404       |
+|    learning_rate        | 0.0003      |
+|    loss                 | 38.7        |
+|    n_updates            | 249750      |
+|    policy_gradient_loss | -0.00646    |
+|    std                  | 0.259       |
+|    value_loss           | 88          |
+-----------------------------------------
+
+
+
+After 21M when choice_tmp =  random.choice([-2.5,-2.2,-2.,2.,2.2,2.5])  
+
+------------------------------------------
+| rollout/                |              |
+|    ep_len_mean          | 808          |
+|    ep_rew_mean          | 765          |
+| time/                   |              |
+|    fps                  | 380          |
+|    iterations           | 2442         |
+|    time_elapsed         | 13134        |
+|    total_timesteps      | 5001216      |
+| train/                  |              |
+|    approx_kl            | 0.0042136256 |
+|    clip_fraction        | 0.0335       |
+|    clip_range           | 0.2          |
+|    entropy_loss         | 0.171        |
+|    explained_variance   | 0.582        |
+|    learning_rate        | 0.0003       |
+|    loss                 | 40.4         |
+|    n_updates            | 244860       |
+|    policy_gradient_loss | -0.00277     |
+|    std                  | 0.204        |
+|    value_loss           | 103          |
+
+
+After 16M when choice_tmp =  random.choice([-2.5,-2.2,-2.,2.,2.2,2.5])  
+
+-----------------------------------------
+| rollout/                |             |
+|    ep_len_mean          | 626         |
+|    ep_rew_mean          | 585         |
+| time/                   |             |
+|    fps                  | 621         |
+|    iterations           | 2442        |
+|    time_elapsed         | 8049        |
+|    total_timesteps      | 5001216     |
+| train/                  |             |
+|    approx_kl            | 0.019718807 |
+|    clip_fraction        | 0.14        |
+|    clip_range           | 0.2         |
+|    entropy_loss         | 0.496       |
+|    explained_variance   | 0.791       |
+|    learning_rate        | 0.0003      |
+|    loss                 | 37.5        |
+|    n_updates            | 220440      |
+|    policy_gradient_loss | -0.00408    |
+|    std                  | 0.146       |
+|    value_loss           | 57.3        |
+-----------------------------------------
+
+After 11M when choice_tmp =  random.choice([-2.5,-2.2,-2.,2.,2.2,2.5])  
+
+-----------------------------------------
+| rollout/                |             |
+|    ep_len_mean          | 833         |
+|    ep_rew_mean          | 710         |
+| time/                   |             |
+|    fps                  | 670         |
+|    iterations           | 489         |
+|    time_elapsed         | 1494        |
+|    total_timesteps      | 1001472     |
+| train/                  |             |
+|    approx_kl            | 0.026182901 |
+|    clip_fraction        | 0.167       |
+|    clip_range           | 0.2         |
+|    entropy_loss         | 0.544       |
+|    explained_variance   | 0.587       |
+|    learning_rate        | 0.0003      |
+|    loss                 | 18.3        |
+|    n_updates            | 196020      |
+|    policy_gradient_loss | -0.00552    |
+|    std                  | 0.14        |
+|    value_loss           | 66.1        |
+-----------------------------------------
+
+After 10M when choice_tmp =  random.choice([-2.5,-2.2,2.2,2.5]) and change reward
+
+-----------------------------------------
+| rollout/                |             |
+|    ep_len_mean          | 625         |
+|    ep_rew_mean          | 535         |
+| time/                   |             |
+|    fps                  | 695         |
+|    iterations           | 1465        |
+|    time_elapsed         | 4313        |
+|    total_timesteps      | 3000320     |
+| train/                  |             |
+|    approx_kl            | 0.018159805 |
+|    clip_fraction        | 0.136       |
+|    clip_range           | 0.2         |
+|    entropy_loss         | 0.614       |
+|    explained_variance   | 0.432       |
+|    learning_rate        | 0.0003      |
+|    loss                 | 9.78        |
+|    n_updates            | 191130      |
+|    policy_gradient_loss | -0.00667    |
+|    std                  | 0.131       |
+|    value_loss           | 77.8        |
+-----------------------------------------
+
+
+After 10M when choice_tmp = random.choice([-2.5,2.5]) and change reward
+
+----------------------------------------
+| rollout/                |            |
+|    ep_len_mean          | 676        |
+|    ep_rew_mean          | 580        |
+| time/                   |            |
+|    fps                  | 621        |
+|    iterations           | 1465       |
+|    time_elapsed         | 4827       |
+|    total_timesteps      | 3000320    |
+| train/                  |            |
+|    approx_kl            | 0.02779335 |
+|    clip_fraction        | 0.177      |
+|    clip_range           | 0.2        |
+|    entropy_loss         | 0.466      |
+|    explained_variance   | 0.511      |
+|    learning_rate        | 0.0003     |
+|    loss                 | 34.4       |
+|    n_updates            | 176480     |
+|    policy_gradient_loss | -0.00658   |
+|    std                  | 0.152      |
+|    value_loss           | 38.1       |
+----------------------------------------
+
+
+After 7M when choice_tmp = random.choice([-2.5,2.5]) and change reward
+
+
+-----------------------------------------
+| rollout/                |             |
+|    ep_len_mean          | 275         |
+|    ep_rew_mean          | 237         |
+| time/                   |             |
+|    fps                  | 464         |
+|    iterations           | 489         |
+|    time_elapsed         | 2156        |
+|    total_timesteps      | 1001472     |
+| train/                  |             |
+|    approx_kl            | 0.021112777 |
+|    clip_fraction        | 0.174       |
+|    clip_range           | 0.2         |
+|    entropy_loss         | 1.06        |
+|    explained_variance   | 0.673       |
+|    learning_rate        | 0.0003      |
+|    loss                 | 33.1        |
+|    n_updates            | 161830      |
+|    policy_gradient_loss | -0.000886   |
+|    std                  | 0.0848      |
+|    value_loss           | 90.5        |
+-----------------------------------------
+
+After 6M when choice_tmp = random.choice([-2.5,2.5]) and change reward
+
+-----------------------------------------
+| rollout/                |             |
+|    ep_len_mean          | 227         |
+|    ep_rew_mean          | 195         |
+| time/                   |             |
+|    fps                  | 575         |
+|    iterations           | 489         |
+|    time_elapsed         | 1741        |
+|    total_timesteps      | 1001472     |
+| train/                  |             |
+|    approx_kl            | 0.036176197 |
+|    clip_fraction        | 0.182       |
+|    clip_range           | 0.2         |
+|    entropy_loss         | 0.95        |
+|    explained_variance   | 0.818       |
+|    learning_rate        | 0.0003      |
+|    loss                 | 30.1        |
+|    n_updates            | 156940      |
+|    policy_gradient_loss | 0.00191     |
+|    std                  | 0.0934      |
+|    value_loss           | 51.9        |
+-----------------------------------------
+
+
+After 5M when choice_tmp = random.choice([-2.5,2.5])
+
+----------------------------------------
+| rollout/                |            |
+|    ep_len_mean          | 175        |
+|    ep_rew_mean          | 174        |
+| time/                   |            |
+|    fps                  | 592        |
+|    iterations           | 489        |
+|    time_elapsed         | 1689       |
+|    total_timesteps      | 1001472    |
+| train/                  |            |
+|    approx_kl            | 0.02211171 |
+|    clip_fraction        | 0.238      |
+|    clip_range           | 0.2        |
+|    entropy_loss         | 1.03       |
+|    explained_variance   | 0.716      |
+|    learning_rate        | 0.0003     |
+|    loss                 | 30.1       |
+|    n_updates            | 152050     |
+|    policy_gradient_loss | 0.00925    |
+|    std                  | 0.0874     |
+|    value_loss           | 74.7       |
+----------------------------------------
+
+After 4M when choice_tmp = random.choice([-2.5,2.5])
+-----------------------------------------
+| rollout/                |             |
+|    ep_len_mean          | 78.7        |
+|    ep_rew_mean          | 77.7        |
+| time/                   |             |
+|    fps                  | 496         |
+|    iterations           | 489         |
+|    time_elapsed         | 2018        |
+|    total_timesteps      | 1001472     |
+| train/                  |             |
+|    approx_kl            | 0.022437269 |
+|    clip_fraction        | 0.212       |
+|    clip_range           | 0.2         |
+|    entropy_loss         | 1.22        |
+|    explained_variance   | 0.808       |
+|    learning_rate        | 0.0003      |
+|    loss                 | 27          |
+|    n_updates            | 147160      |
+|    policy_gradient_loss | -0.000563   |
+|    std                  | 0.0721      |
+|    value_loss           | 46.3        |
+-----------------------------------------
+
+
+After 3M when choice_tmp = random.choice([-2.5,2.5])
+
+
+----------------------------------------
+| rollout/                |            |
+|    ep_len_mean          | 84.7       |
+|    ep_rew_mean          | 83.7       |
+| time/                   |            |
+|    fps                  | 478        |
+|    iterations           | 489        |
+|    time_elapsed         | 2092       |
+|    total_timesteps      | 1001472    |
+| train/                  |            |
+|    approx_kl            | 0.08563177 |
+|    clip_fraction        | 0.208      |
+|    clip_range           | 0.2        |
+|    entropy_loss         | 1.36       |
+|    explained_variance   | 0.744      |
+|    learning_rate        | 0.0003     |
+|    loss                 | 31.5       |
+|    n_updates            | 142270     |
+|    policy_gradient_loss | 0.00895    |
+|    std                  | 0.0617     |
+|    value_loss           | 56.3       |
+----------------------------------------
+
+
+After 2M when choice_tmp = random.choice([-2.5,2.5])
+
+-----------------------------------------
+| rollout/                |             |
+|    ep_len_mean          | 96.4        |
+|    ep_rew_mean          | 95.4        |
+| time/                   |             |
+|    fps                  | 582         |
+|    iterations           | 489         |
+|    time_elapsed         | 1719        |
+|    total_timesteps      | 1001472     |
+| train/                  |             |
+|    approx_kl            | 0.029687084 |
+|    clip_fraction        | 0.222       |
+|    clip_range           | 0.2         |
+|    entropy_loss         | 1.32        |
+|    explained_variance   | 0.78        |
+|    learning_rate        | 0.0003      |
+|    loss                 | 31.2        |
+|    n_updates            | 137380      |
+|    policy_gradient_loss | 0.00515     |
+|    std                  | 0.0646      |
+|    value_loss           | 60.9        |
+-----------------------------------------
+
+
+
+
+After 1M when choice_tmp = random.choice([-2.5,2.5])
+-----------------------------------------
+| rollout/                |             |
+|    ep_len_mean          | 67.3        |
+|    ep_rew_mean          | 66.3        |
+| time/                   |             |
+|    fps                  | 552         |
+|    iterations           | 489         |
+|    time_elapsed         | 1814        |
+|    total_timesteps      | 1001472     |
+| train/                  |             |
+|    approx_kl            | 0.035236545 |
+|    clip_fraction        | 0.258       |
+|    clip_range           | 0.2         |
+|    entropy_loss         | 1.41        |
+|    explained_variance   | 0.856       |
+|    learning_rate        | 0.0003      |
+|    loss                 | 14.7        |
+|    n_updates            | 132490      |
+|    policy_gradient_loss | 0.00728     |
+|    std                  | 0.0593      |
+|    value_loss           | 26          |
+-----------------------------------------
+
+  
+  
+  of After 17M + 7M +   (1M training only on  when set  choice_tmp = random.choice([-3.,  3.])  )
+---------------------------------------
+| rollout/                |           |
+|    ep_len_mean          | 29.4      |
+|    ep_rew_mean          | 28.4      |
+| time/                   |           |
+|    fps                  | 449       |
+|    iterations           | 489       |
+|    time_elapsed         | 2229      |
+|    total_timesteps      | 1001472   |
+| train/                  |           |
+|    approx_kl            | 0.8290757 |
+|    clip_fraction        | 0.389     |
+|    clip_range           | 0.2       |
+|    entropy_loss         | 2.6       |
+|    explained_variance   | 0.995     |
+|    learning_rate        | 0.0003    |
+|    loss                 | 0.648     |
+|    n_updates            | 127600    |
+|    policy_gradient_loss | 0.0472    |
+|    std                  | 0.0182    |
+|    value_loss           | 0.296     |
+---------------------------------------
+
+At the begining of After 17M + 7M   when set  choice_tmp = random.choice([-3.,  3.])
+
+---------------------------------
+| rollout/           |          |
+|    ep_len_mean     | 14.6     |
+|    ep_rew_mean     | 13.6     |
+| time/              |          |
+|    fps             | 320      |
+|    iterations      | 1        |
+|    time_elapsed    | 6        |
+|    total_timesteps | 2048     |
+---------------------------------
+
+
+After 17M + 4M   before that was a bug
+----------------------------------------
+| rollout/                |            |
+|    ep_len_mean          | 150        |
+|    ep_rew_mean          | 149        |
+| time/                   |            |
+|    fps                  | 348        |
+|    iterations           | 1465       |
+|    time_elapsed         | 8610       |
+|    total_timesteps      | 3000320    |
+| train/                  |            |
+|    approx_kl            | 0.03379938 |
+|    clip_fraction        | 0.217      |
+|    clip_range           | 0.2        |
+|    entropy_loss         | 1.41       |
+|    explained_variance   | 0.869      |
+|    learning_rate        | 0.0003     |
+|    loss                 | 26.7       |
+|    n_updates            | 108060     |
+|    policy_gradient_loss | -0.00438   |
+|    std                  | 0.0596     |
+|    value_loss           | 54.5       |
+----------------------------------------
+
+
+
+After 17M + 1M   before that was a bug
+
+-----------------------------------------
+| rollout/                |             |
+|    ep_len_mean          | 77.4        |
+|    ep_rew_mean          | 76.4        |
+| time/                   |             |
+|    fps                  | 572         |
+|    iterations           | 489         |
+|    time_elapsed         | 1748        |
+|    total_timesteps      | 1001472     |
+| train/                  |             |
+|    approx_kl            | 0.025980815 |
+|    clip_fraction        | 0.23        |
+|    clip_range           | 0.2         |
+|    entropy_loss         | 1.48        |
+|    explained_variance   | 0.944       |
+|    learning_rate        | 0.0003      |
+|    loss                 | 5.08        |
+|    n_updates            | 93410       |
+|    policy_gradient_loss | 0.0051      |
+|    std                  | 0.0548      |
+|    value_loss           | 8.89        |
+-----------------------------------------
+
+
+
+
+
+
+After 17M  but reset returns true 4 degree angle not zero as before that was a bug
+Indicates sensetivity to observation retuned by reset method
+
+---------------------------------
+| rollout/           |          |
+|    ep_len_mean     | 22.2     |
+|    ep_rew_mean     | 21.2     |
+| time/              |          |
+|    fps             | 61       |
+|    iterations      | 1        |
+|    time_elapsed    | 33       |
+|    total_timesteps | 2048     |
+---------------------------------
+
+
+
+
+After 17M  not normalized  2024-12-28  Sometimes fall in stable swinging loop See Video.
+
+
+
+-----------------------------------------
+| rollout/                |             |
+|    ep_len_mean          | 1.55e+03    |
+|    ep_rew_mean          | 1.55e+03    |
+| time/                   |             |
+|    fps                  | 680         |
+|    iterations           | 1465        |
+|    time_elapsed         | 4412        |
+|    total_timesteps      | 3000320     |
+| train/                  |             |
+|    approx_kl            | 0.016528592 |
+|    clip_fraction        | 0.095       |
+|    clip_range           | 0.2         |
+|    entropy_loss         | 0.838       |
+|    explained_variance   | 0.856       |
+|    learning_rate        | 0.0003      |
+|    loss                 | 16.9        |
+|    n_updates            | 88520       |
+|    policy_gradient_loss | -0.00475    |
+|    std                  | 0.104       |
+|    value_loss           | 30.5        |
+-----------------------------------------
+
+
+
+
+After 14M  not normalized  2024-12-28  Sometimes fall in stable swinging loop See Video.
+
+epizod 25     steps=2001      Last action: [1.1838397]
+epizod 26     steps=29        Last action: [4.323116]
+
+
+----------------------------------------
+| rollout/                |            |
+|    ep_len_mean          | 715        |
+|    ep_rew_mean          | 714        |
+| time/                   |            |
+|    fps                  | 201        |
+|    iterations           | 9          |
+|    time_elapsed         | 91         |
+|    total_timesteps      | 18432      |
+| train/                  |            |
+|    approx_kl            | 0.04887828 |
+|    clip_fraction        | 0.252      |
+|    clip_range           | 0.2        |
+|    entropy_loss         | 1.65       |
+|    explained_variance   | 0.906      |
+|    learning_rate        | 0.0003     |
+|    loss                 | 4.48       |
+|    n_updates            | 73960      |
+|    policy_gradient_loss | 0.00878    |
+|    std                  | 0.0464     |
+|    value_loss           | 31         |
+----------------------------------------
+
+
+After 11M  not normalized  2024-12-28
+
+-----------------------------------------
+| rollout/                |             |
+|    ep_len_mean          | 130         |
+|    ep_rew_mean          | 129         |
+| time/                   |             |
+|    fps                  | 619         |
+|    iterations           | 1465        |
+|    time_elapsed         | 4842        |
+|    total_timesteps      | 3000320     |
+| train/                  |             |
+|    approx_kl            | 0.032015763 |
+|    clip_fraction        | 0.216       |
+|    clip_range           | 0.2         |
+|    entropy_loss         | 1.54        |
+|    explained_variance   | 0.894       |
+|    learning_rate        | 0.0003      |
+|    loss                 | 16.4        |
+|    n_updates            | 59220       |
+|    policy_gradient_loss | 0.00953     |
+|    std                  | 0.0516      |
+|    value_loss           | 41.6        |
+-----------------------------------------
+
+
+
+After 8M  not normalized  2024-12-28
+-----------------------------------------
+| rollout/                |             |
+|    ep_len_mean          | 135         |
+|    ep_rew_mean          | 134         |
+| time/                   |             |
+|    fps                  | 658         |
+|    iterations           | 1465        |
+|    time_elapsed         | 4556        |
+|    total_timesteps      | 3000320     |
+| train/                  |             |
+|    approx_kl            | 0.028356448 |
+|    clip_fraction        | 0.228       |
+|    clip_range           | 0.2         |
+|    entropy_loss         | 1.67        |
+|    explained_variance   | 0.905       |
+|    learning_rate        | 0.0003      |
+|    loss                 | 18.8        |
+|    n_updates            | 44570       |
+|    policy_gradient_loss | 0.0122      |
+|    std                  | 0.0451      |
+|    value_loss           | 34.5        |
+-----------------------------------------
+
+After 5M  not normalized  2024-12-28
+
+---------------------------------------
+| rollout/                |           |
+|    ep_len_mean          | 131       |
+|    ep_rew_mean          | 130       |
+| time/                   |           |
+|    fps                  | 645       |
+|    iterations           | 977       |
+|    time_elapsed         | 3097      |
+|    total_timesteps      | 2000896   |
+| train/                  |           |
+|    approx_kl            | 0.0360566 |
+|    clip_fraction        | 0.281     |
+|    clip_range           | 0.2       |
+|    entropy_loss         | 1.47      |
+|    explained_variance   | 0.866     |
+|    learning_rate        | 0.0003    |
+|    loss                 | 26        |
+|    n_updates            | 29920     |
+|    policy_gradient_loss | 0.0115    |
+|    std                  | 0.0559    |
+|    value_loss           | 47.2      |
+---------------------------------------
+
+
+After 3M  not normalized  2024-12-28
+
+
+-----------------------------------------
+| rollout/                |             |
+|    ep_len_mean          | 111         |
+|    ep_rew_mean          | 110         |
+| time/                   |             |
+|    fps                  | 599         |
+|    iterations           | 489         |
+|    time_elapsed         | 1671        |
+|    total_timesteps      | 1001472     |
+| train/                  |             |
+|    approx_kl            | 0.024390094 |
+|    clip_fraction        | 0.188       |
+|    clip_range           | 0.2         |
+|    entropy_loss         | 1.18        |
+|    explained_variance   | 0.846       |
+|    learning_rate        | 0.0003      |
+|    loss                 | 16          |
+|    n_updates            | 20050       |
+|    policy_gradient_loss | 0.0128      |
+|    std                  | 0.0743      |
+|    value_loss           | 50.9        |
+-----------------------------------------
+
+
+
+After 2M  not normalized  2024-12-28
+
+-----------------------------------------
+| rollout/                |             |
+|    ep_len_mean          | 100         |
+|    ep_rew_mean          | 99.1        |
+| time/                   |             |
+|    fps                  | 616         |
+|    iterations           | 489         |
+|    time_elapsed         | 1624        |
+|    total_timesteps      | 1001472     |
+| train/                  |             |
+|    approx_kl            | 0.033141874 |
+|    clip_fraction        | 0.216       |
+|    clip_range           | 0.2         |
+|    entropy_loss         | 1.41        |
+|    explained_variance   | 0.838       |
+|    learning_rate        | 0.0003      |
+|    loss                 | 22.2        |
+|    n_updates            | 15160       |
+|    policy_gradient_loss | 0.00719     |
+|    std                  | 0.0595      |
+|    value_loss           | 43.8        |
+-----------------------------------------
