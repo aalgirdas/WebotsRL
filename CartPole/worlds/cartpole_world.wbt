@@ -1,0 +1,204 @@
+#VRML_SIM R2023b utf8
+
+EXTERNPROTO "https://raw.githubusercontent.com/cyberbotics/webots/R2023b/projects/objects/floors/protos/RectangleArena.proto"
+EXTERNPROTO "https://raw.githubusercontent.com/cyberbotics/webots/R2023b/projects/objects/backgrounds/protos/TexturedBackground.proto"
+EXTERNPROTO "https://raw.githubusercontent.com/cyberbotics/webots/R2023b/projects/objects/backgrounds/protos/TexturedBackgroundLight.proto"
+
+WorldInfo {
+}
+Viewpoint {
+  fieldOfView 1.3
+  orientation -0.1849332562219514 0.10769485053314654 0.9768323857816086 1.9029469581134206
+  position 1.87819 -4.62509 2.5
+}
+TexturedBackground {
+}
+TexturedBackgroundLight {
+}
+RectangleArena {
+  floorSize 10 10
+}
+DEF ROBOT Robot {
+  translation 0 0 0.04
+  rotation 1 0 0 1.5708
+  children [
+    DEF BODY Shape {
+      appearance PBRAppearance {
+        baseColor 0.917647 0.145098 0.145098
+        roughness 1
+        metalness 0
+      }
+      geometry Box {
+        size 0.2 0.05 0.08
+      }
+    }
+    DEF WHEEL1 HingeJoint {
+      jointParameters HingeJointParameters {
+        position 6.723540149111039e-17
+        axis 0 0 1
+        anchor 0.06 0 0.05
+      }
+      device [
+        RotationalMotor {
+          name "wheel1"
+          maxVelocity 100
+        }
+      ]
+      endPoint Solid {
+        translation 0.060001004644818584 1.3392769184170796e-05 0.050000010543824816
+        rotation 1.7671082538995956e-08 -1.7671248834016846e-08 0.9999999999999998 1.5708000430119504
+        children [
+          DEF WHEEL Shape {
+            appearance PBRAppearance {
+              baseColor 0.305882 0.898039 0.25098
+              roughness 1
+              metalness 0
+            }
+            geometry Cylinder {
+              height 0.02
+              radius 0.04
+              subdivision 24
+            }
+          }
+        ]
+        boundingObject USE WHEEL
+        physics Physics {
+        }
+      }
+    }
+    DEF WHEEL2 HingeJoint {
+      jointParameters HingeJointParameters {
+        position 6.670640318240083e-17
+        axis 0 0 1
+        anchor -0.06 0 0.05
+      }
+      device [
+        RotationalMotor {
+          name "wheel2"
+          maxVelocity 100
+        }
+      ]
+      endPoint Solid {
+        translation -0.060001095993954395 7.61633872328137e-07 0.05000000952472374
+        rotation 1.7609654043190183e-08 -1.7609826183889785e-08 0.9999999999999997 1.5707999569897093
+        children [
+          USE WHEEL
+        ]
+        name "solid(1)"
+        boundingObject USE WHEEL
+        physics Physics {
+        }
+      }
+    }
+    DEF WHEEL3 HingeJoint {
+      jointParameters HingeJointParameters {
+        position 1.0324509589061627e-16
+        axis 0 0 1
+        anchor 0.06 0 -0.05
+      }
+      device [
+        RotationalMotor {
+          name "wheel3"
+          maxVelocity 100
+        }
+      ]
+      endPoint Solid {
+        translation 0.06000100379909951 1.3392659934532585e-05 -0.05000000738328558
+        rotation -1.7671380018270744e-08 1.7671539284228023e-08 0.9999999999999998 1.5708000430119113
+        children [
+          USE WHEEL
+        ]
+        name "solid(2)"
+        boundingObject USE WHEEL
+        physics Physics {
+        }
+      }
+    }
+    DEF WHEEL4 HingeJoint {
+      jointParameters HingeJointParameters {
+        position -2.6895122773572173e-17
+        axis 0 0 1
+        anchor -0.06 0 -0.05
+      }
+      device [
+        RotationalMotor {
+          name "wheel4"
+          maxVelocity 100
+        }
+      ]
+      endPoint Solid {
+        translation -0.060001096839924606 7.61524622585895e-07 -0.05000000839401549
+        rotation -1.7610008372639055e-08 1.7610180209133872e-08 0.9999999999999997 1.5707999569897055
+        children [
+          USE WHEEL
+        ]
+        name "solid(3)"
+        boundingObject USE WHEEL
+        physics Physics {
+        }
+      }
+    }
+    DEF POLE HingeJoint {
+      jointParameters HingeJointParameters {
+        position -4.812689688184746e-16
+        axis 0 0 1
+        anchor 0 0.03000000000047226 0
+        minStop -1.3
+        maxStop 1.3
+      }
+      device [
+        DEF POLE_POS_SENSOR PositionSensor {
+          name "polePosSensor"
+        }
+      ]
+      endPoint Solid {
+        translation 0 0.530004 -5.36958e-07
+        rotation -0.5769874410964551 -0.577531387768983 0.577531807746203 2.0949379676602007
+        children [
+          DEF POLE_ENDPOINT Solid {
+            translation 0.5000000000000002 0 0
+            children [
+              DEF BALL Shape {
+                appearance PBRAppearance {
+                  baseColor 0.03137254901960784 0.047058823529411764 1
+                  metalness 0
+                }
+                geometry Sphere {
+                  radius 0.05
+                }
+              }
+            ]
+            boundingObject USE BALL
+            physics Physics {
+              density -1
+              mass 0.02
+            }
+          }
+          DEF POLE Shape {
+            appearance PBRAppearance {
+              baseColor 1 0.1568627450980392 0.1568627450980392
+              roughness 1
+              metalness 0
+            }
+            geometry Box {
+              size 1 0.020000000000000004 0.019999999999999997
+            }
+          }
+        ]
+        name "pole"
+        boundingObject USE POLE
+        physics Physics {
+          density -1
+          mass 0.2
+        }
+      }
+    }
+  ]
+  boundingObject USE BODY
+  physics Physics {
+    density -1
+    mass 2
+  }
+  controller "cartpole_PID"
+  supervisor TRUE
+}
