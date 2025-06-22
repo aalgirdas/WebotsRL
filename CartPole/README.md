@@ -1,25 +1,25 @@
-This solution provides the full code for the test orchestrator, an improved robot controller, a sample test definition file, and an analysis script to visualize the results.
+This provides the full code for the test orchestrator, an improved robot controller, a sample test definition file, and an analysis script to visualize the results.
 
 ### Project Structure
 
 First, organize your project files as follows. This structure is crucial for the scripts to find each other.
 
 ```
-your_webots_project/
+CartPole/
 ├── worlds/
-│   └── cartpole_world.wbt         # Your main world file
+│   └── cartpole_world.wbt         # <-- main world file
 │
 ├── controllers/
-│   ├── orchestrator/              # <-- NEW: The main testing supervisor
+│   ├── orchestrator/              # <--  The main testing supervisor
 │   │   └── orchestrator.py
 │   │
-│   └── cartpole_pid_instrumented/   # <-- NEW: The improved robot controller
+│   └── cartpole_pid_instrumented/   # <--  The improved robot controller
 │       └── cartpole_pid_instrumented.py
 │
-├── scenarios/                     # <-- NEW: Test definitions
+├── scenarios/                     # <--  Test definitions
 │   └── test_suite.yaml
 │
-└── analysis/                      # <-- NEW: Script to plot results
+└── analysis/                      # <--  Script to plot results
     └── plot_results.py
 ```
 
