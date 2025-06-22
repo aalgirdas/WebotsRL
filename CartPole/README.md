@@ -2,24 +2,24 @@ This provides the full code for the test orchestrator, an improved robot control
 
 ### Project Structure
 
-First, organize your project files as follows. This structure is crucial for the scripts to find each other.
+Project files. 
 
 ```
 CartPole/
 ├── worlds/
-│   └── cartpole_world.wbt         # <-- main world file
+│   └── cartpole_world.wbt         # main world file
 │
 ├── controllers/
-│   ├── orchestrator/              # <--  The main testing supervisor
+│   ├── orchestrator/              # The main testing supervisor
 │   │   └── orchestrator.py
 │   │
-│   └── cartpole_pid_instrumented/   # <--  The improved robot controller
+│   └── cartpole_pid_instrumented/   # The improved robot controller
 │       └── cartpole_pid_instrumented.py
 │
-├── scenarios/                     # <--  Test definitions
+├── scenarios/                     # Test definitions
 │   └── test_suite.yaml
 │
-└── analysis/                      # <--  Script to plot results
+└── analysis/                      # Script to plot results
     └── plot_results.py
 ```
 
